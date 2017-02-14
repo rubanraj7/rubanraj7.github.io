@@ -10,9 +10,94 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/shared.css" />
+        <link rel="stylesheet" href="css/mystyles.css" />
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="_js/bootstrap.js"></script>
+        <script src="_js/myscript.js"></script>
     </head>
     <body>
-        <h1>GIT HUB</h1>
+        <div id="header">
+            
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="index.html">Ruban Rajendran</a>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right" id="navList">
+                        <li><a href="index.html">HOME</a></li>
+                        <!--<li><a href="aboutMe.html">ABOUT</a></li>-->
+                        <li><a href="photography.html">PHOTOGRAPHY</a></li>
+                        <li><a href="contactMe.php">CONTACT</a></li>
+                    </ul>
+                    </div>                   
+                </div>
+            </nav>
+        </div>
+            <div id="main">
+                <div class="container-fluid bg-3 text-center"> 
+                    <!--<section class="block">-->
+                    <div class="jumbotron text-center">
+                        <div><img class="logo" src="_images/nameLogo1.png" alt="RR"></div>
+                        <!--<p>and i'm a web developer</p>--> 
+                    </div>
+                    <!--</section>-->
+                    <section class="block">
+                        <div style='font-size: 15px;'> MY WORK</div><br>
+                        <div class="row">
+                            <div class="col-sm-4 item">                         
+                                <a href="http://m5shop.nyc/" target='_blank' ><img src="_images/m5Shop.png" class="img-responsive" style="width:100%" alt="Image"></a>
+                                <p class="itemDesc">M5 Showroom</p>
+                                <p class="itemDesc">HTML5, CSS3, Bootstrap, jQuery</p>
+                            </div>
+                            <div class="col-sm-4 item"> 
+                                <a href="https://amongwonders.com/" target='_blank' ><img src="_images/amongWonders.png" class="img-responsive" style="width:100%" alt="Image"></a>
+                                <p class="itemDesc">Among Wonders</p>
+                                <p class="itemDesc">Customized Shopify Theme</p>
+                            </div>
+                            <div class="col-sm-4 item"> 
+                                <a href="http://shop.piquetoronto.com/" target='_blank' ><img src="_images/pique.png" class="img-responsive" style="width:100%" alt="Image"></a>
+                                <p class="itemDesc">Pique Toronto</p>
+                                <p class="itemDesc">Customized Shopify Theme</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 item">                         
+                                <a href="http://wearbldev.herokuapp.com/" target='_blank' ><img src="_images/wearbl.png" class="img-responsive" style="width:100%" alt="Image"></a>
+                                <p class="itemDesc">wearbl</p>
+                                <p class="itemDesc"> PHP, HTML5, CSS3, Bootstrap, jQuery, mySQL</p>
+                            </div>
+                        </div>
+                    </section>
+                </div><br>
+            </div>
+            <footer class='footerContainer'>
+                <!--<h2>Get in Touch</h2>-->
+                <!--<br>-->
+                <div class="">
+                    <div class="col-sm-4 footerItem">                         
+                        <div class="footerTitle">EMAIL</div>
+                        <div class="footerDesc"><a href="mailto:ruban.raj710@gmail.com?Subject=Hello Hello" target="_top">RUBAN.RAJ710@GMAIL.COM</a></div>
+                    </div>
+                    <div class="col-sm-4 footerItem">                         
+                        <div class="footerTitle">SOCIAL</div>
+                        <div class="footerDesc">
+                            <a href="https://www.instagram.com/rubanraj7/"><img class="socialIcon" src="_images/instagram.png" alt="IG"></a>
+                            <a href="https://ca.linkedin.com/in/ruban-rajendran-88bb0550"><img class="socialIcon" src="_images/linkedin.png" alt="IG"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
         
     </body>
 </html>
