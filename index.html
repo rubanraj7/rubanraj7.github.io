@@ -11,17 +11,19 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+         <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
         <link rel="stylesheet" href="css/shared.css" />
         <link rel="stylesheet" href="css/mystyles.css" />
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- <script src="js/bootstrap.js"></script> -->
         <script src="js/myscript.js"></script>
     </head>
     <body>
         <div id="header">
             
-            <nav class="navbar navbar-default navbar-fixed-top">
+            <!-- <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -35,13 +37,23 @@ and open the template in the editor.
                     <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right" id="navList">
                         <li><a href="index.html">HOME</a></li>
-                        <!--<li><a href="aboutMe.html">ABOUT</a></li>-->
                         <li><a href="photography.html">PHOTOGRAPHY</a></li>
-                        <!--<li><a href="contactMe.php">CONTACT</a></li>-->
                     </ul>
                     </div>                   
                 </div>
-            </nav>
+            </nav> -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="index.html">Ruban Rajendran</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="photography.html">Photography</a>
+              </div>
+          </div>
+      </nav>
         </div>
             <div id="main">
                 <div class="container-fluid bg-3 text-center"> 
@@ -55,26 +67,32 @@ and open the template in the editor.
                         <div style='font-size: 15px;'> MY WORK</div><br>
                         <div class="row">
                             <div class="col-sm-4 item"> 
-                                <a href="/sites/synonymshop/index.html" ><img src="images/pique.png" class="img-responsive" style="width:100%" alt="Image"></a>
-                                <p class="itemDesc font-weight-bold">Synonym Shop</p>
-                                <p class="itemDesc"></p>
+                                <a href="/sites/synonymshop/index.html" ><img src="images/synonym_web1.png" class="img-responsive" style="width:100%" alt="Image"></a>
+                                <div class="itemDesc font-weight-bold">Synonym Shop</div>
+                                <div class="itemDesc"><small>HTML5, CSS3, Bootstrap</small></div>
                             </div>
                             <div class="col-sm-4 item">                         
                                 <a href="/sites/M5/index.html"><img src="images/m5Shop.png" class="img-responsive" style="width:100%" alt="Image"></a>
-                                <p class="itemDesc font-weight-bold">M5 Showroom</p>
-                                <p class="itemDesc">HTML5, CSS3, Bootstrap, jQuery</p>
+                                <div class="itemDesc font-weight-bold">M5 Showroom</div>
+                                <div class="itemDesc"><small>HTML5, CSS3, Bootstrap, jQuery</small></div>
                             </div>
-                            <div class="col-sm-4 item"> 
-                                <a href="https://amongwonders.com/" target='_blank' ><img src="images/amongWonders.png" class="img-responsive" style="width:100%" alt="Image"></a>
-                                <p class="itemDesc font-weight-bold">Among Wonders</p>
-                                <p class="itemDesc">Customized Shopify Theme</p>
+                            <div class="col-sm-4 item">                         
+                                <a href="/sites/jdhprojects/index.html"><img src="images/jdh_screencap.png" class="img-responsive" style="width:100%" alt="Image"></a>
+                                <div class="itemDesc font-weight-bold">JDH Projects</div>
+                                <div class="itemDesc"><small>HTML5, CSS3, Bootstrap, jQuery</small></div>
                             </div>
+                            
                         </div>
                         <div class="row">
                             <div class="col-sm-4 item">                         
                                 <a href="http://wearbldev.herokuapp.com/" target='_blank' ><img src="images/wearbl.png" class="img-responsive" style="width:100%" alt="Image"></a>
-                                <p class="itemDesc font-weight-bold">wearbl</p>
-                                <p class="itemDesc"> PHP, HTML5, CSS3, Bootstrap, jQuery, mySQL</p>
+                                <div class="itemDesc font-weight-bold">wearbl</div>
+                                <div class="itemDesc"><small>PHP, HTML5, CSS3, Bootstrap, jQuery, mySQL</small></div>
+                            </div>
+                            <div class="col-sm-4 item"> 
+                                <a href="https://amongwonders.com/" target='_blank' ><img src="images/amongWonders.png" class="img-responsive" style="width:100%" alt="Image"></a>
+                                <div class="itemDesc font-weight-bold">Among Wonders</div>
+                                <div class="itemDesc"><small>Customized Shopify Theme</small></div>
                             </div>
                         </div>
                     </section>
@@ -83,9 +101,9 @@ and open the template in the editor.
             <footer class='footerContainer'>
                 <!--<h2>Get in Touch</h2>-->
                 <!--<br>-->
-                <div class="">
+                <div class="row">
                     <div class="col-sm-4 footerItem">                         
-                        <div class="footerTitle">EMAIL</div>
+                        <!-- <div class="footerTitle">EMAIL</div> -->
                         <div class="footerDesc"><a href="mailto:ruban.raj710@gmail.com?Subject=Hello Hello" target="_top">RUBAN.RAJ710@GMAIL.COM</a></div>
                     </div>
                     <div class="col-sm-4 footerItem">                         

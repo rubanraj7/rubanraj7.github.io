@@ -31,7 +31,7 @@ body {
 }
 
 .footerContainer{
-    background-image:url("../_images/footerBack.jpg");
+    background-image:url("../images/footerBack.jpg");
     padding: 30px 0;
     text-align: center;
     border-top: solid 2px black;
