@@ -1,0 +1,184 @@
+body{
+	background-color: #fbfbfb;
+}
+
+a {
+  color: inherit;
+  text-decoration: none; /* no underline */
+}
+
+.topSpacer, .mobileLeftBlock{
+  		display: none;
+  	}
+
+.container{
+	padding-top: 23%;
+}
+
+#title{
+	z-index: 1000;
+}
+
+#hours{
+	text-align: right;
+	margin-top: 80px;
+}
+
+.titleContainer { 
+	/* fixed position a zero-height full width container */
+	position: fixed;
+	top: 50%;
+	left: 0;
+	right: 0;
+	height: 0;
+	/* center all inline content */
+	text-align: center;
+}
+
+.titleContainer > .title {
+	/* make the block inline */
+	/*display: inline-block;*/
+	/* reset container's center alignment */
+	/*text-align: left;*/
+	/*font-weight: bold;*/
+}
+
+.subtextContainer{
+	padding-top: 15%;
+}
+
+.subtext, .eatdrinkartbooks{
+	font-family: "Courier New", Courier, monospace;
+	font-size: 10px;
+}
+
+.subtext .subtextBlock{
+	text-align: left;
+}
+
+.subtextBlock{
+	margin: auto;
+}
+
+.leftBlock{
+	padding-top: 25%;
+	padding-left: 10%
+}
+
+.rightBlock{
+	text-align: right;
+	padding-top: 15%;
+	position:relative;
+	right: 5%;
+}
+
+.date{
+	color: red;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+
+.gallery{
+	height: 300px;
+	margin-top: 50px;
+	/*text-align: center;*/
+	/*border: solid black 1px;*/
+}
+
+
+.galleryRow:nth-of-type(2)>.col1 {
+    padding-top: 150px;
+    padding-left: 50px;
+}
+
+.galleryRow:nth-of-type(3)>.col2 {
+    padding-top: 50px;
+    padding-left: 90px;
+}
+
+#singleImg{
+	width: 70%;
+}
+
+.colImage{
+	margin: 50px 0;
+}
+
+.col1{
+	padding-right: 24px;
+}
+
+/*to revert to two columns, uncomment the first and comment out the send line below*/
+.col2{
+	/*padding-top: 100px;*/
+	margin: auto;
+	text-align: center;
+}
+
+.row{
+	/*height: 300px;*/
+}
+
+/*-------DEM MEDIA QUERIES-------*/
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  	.subtext{
+  		font-size: 2rem;
+  	}
+  	.topSpacer{
+  		display: block;
+  		height: 300px;
+  	}
+
+  	.leftBlock{
+  		display: none;
+  	}
+
+  	.mobileLeftBlock{
+  		display: block;
+  		padding: 0 30px;
+  		margin-bottom: 15px;
+  	}
+  	.rightBlock{
+  		text-align: left;
+  		right: 0;
+  		padding: 0px; 
+  	}
+
+  	.row{
+  		margin: 0;
+  	}
+
+#hours{
+	text-align: left;
+	margin-top: 10px;
+}
+
+  	.colImage{
+  		margin:0;
+  	}
+  	.col1, .col2{
+  		padding: 0;
+  	}
+
+  	.gallery{
+  		height:0px;
+  	}
+#singleImg{
+	width: 100%;
+}
+
+.galleryRow:nth-of-type(2)>.col1 {
+    padding:0;
+}
+
+.galleryRow:nth-of-type(3)>.col2 {
+    padding:0;
+}
+

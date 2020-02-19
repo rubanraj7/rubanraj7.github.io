@@ -1,0 +1,158 @@
+body{
+	background-color: #f9f9f9;
+	color: #27292b;
+	font-family: "Judson Medium";
+}
+
+a{
+	color: #27292b;
+}
+
+.container{
+	/*border: solid 1px;*/
+	height: 100vh;
+	max-width: 100%;
+}
+
+.py-4{
+	padding: 0!important;;
+}
+
+#siteTitle{
+	position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 0;
+    text-align: center;
+    z-index: -1;
+    font-size: 1.2rem;
+}
+
+.leftSide{
+	height: 100vh;
+	/*border: solid red 1px;*/
+	z-index: 1000;
+}
+
+.rightSide{
+	height: 100vh;
+	/*border: solid blue 1px;*/
+	z-index: 1000;
+}
+
+.leftSide:hover{
+	cursor: w-resize;
+}
+
+.rightSide:hover{
+	cursor: e-resize;
+}
+
+.imageLayer{
+	position: absolute;
+	z-index: 100;
+	height: 100%;
+}
+
+#vimeoVideo{
+	position:absolute;
+	top:5%;
+	left:0;
+	width:100%;
+	height:90%;
+	z-index:100;
+}
+
+#contact{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	display: none;
+	line-height: normal;
+	font-size: 1.2rem;
+}
+
+#contactImageContainer{
+	display: none;
+	position: absolute;
+	/*border: solid 1px black;*/
+	width: 33%;
+	height: 40%;
+	bottom: 8%;
+	right: 5%;
+}
+
+#img6{
+	position: absolute;
+	/*position: relative;*/
+	/*bottom: 26%;*/
+	right: 22%;
+	width: 30%;
+	z-index: 20;
+}
+
+#img7{
+	position: absolute;
+	bottom: 15%;
+	right: 0%;
+	width: 25%;
+	z-index: 10;
+}
+
+#img8{
+	position: absolute;
+	bottom: 0;
+	right: 30%;
+	width: 45%;
+}
+
+.contactImg>img{
+	width: 100%;
+	z-index: 10;
+
+}
+
+/*-------DEM MEDIA QUERIES-------*/
+
+/* Portrait and Landscape */
+@media (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	#contactImage{
+	position: absolute;
+	bottom: 2%;
+	right: 5%;
+	width: 40%;
+	display: none;
+}
+
+.imageLayer{
+	width:100%;
+	height: auto;
+}
+
+.layer2{
+	top: 35%;
+}
+
+#contactImageContainer{
+	position: absolute;
+	/*border: solid 1px black;*/
+	width: 100%;
+	height: 35%;
+	bottom: 0;
+	right: 0;
+}
+
+#img6{
+	/*width: 100%;*/
+}
+
+#siteTitle, #contact{
+	font-size: 2rem;
+}
+
+
+
+}

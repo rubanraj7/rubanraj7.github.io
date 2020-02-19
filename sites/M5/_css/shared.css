@@ -1,0 +1,346 @@
+/* 
+    Created on : 26-Oct-2016, 11:00:12 PM
+    Author     : RubanR
+*/
+body {
+  /*background: linear-gradient(90deg, white, gray);*/
+  background-color: #fff;
+}
+
+body, h1, p {
+/*  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;*/
+  font-family: "Avenir Next";
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.contentContainer {
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 1%;
+  max-width: 1170px;
+  padding: 20px 0;
+}
+
+header{
+    margin-bottom: 35px;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+ul li > ul {
+    display: none;
+    list-style: none;
+    /* 	border:1px solid black; */
+}
+
+#tabLinks{
+    display: inline-block;
+    float: left;
+}
+
+#menuBar {
+    list-style-type: none;
+    margin: 0; 
+    margin-left: 100px;
+    text-align: left;
+}
+
+#menuBar > li {
+    padding: 0 10px;
+    font-size: 11px;
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+}
+a:hover{
+    color:#529ECC;
+    text-decoration: none;
+}
+
+#main{
+    margin: auto;
+    width: 650px;
+    /*height: 440px;*/
+    padding-top: 2px;
+}
+
+.submenu{
+    padding-left: 20px;
+}
+
+#logo{
+    height:85px;
+}
+
+#shopInfo{
+    margin: 30px 0;
+}
+
+#aboutSection{
+    width:100%;
+    margin: 25px auto;
+    /*margin: 50px 0;*/
+}
+
+.rslides > li {
+    list-style-type: none;
+}
+p {
+    text-indent: 30px;
+    text-align: left;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+
+#social{
+    width: 650px;
+    margin: auto;
+    text-align: center;
+}
+
+.socialContainer{
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 10px 0;
+}
+
+.socialIcon{
+    height: 14px;
+}
+
+#igIcon{
+    height: 15px;
+    padding-right: 0;
+}
+
+    .rslides{
+    margin:0;
+    padding: 0;
+}
+
+.rslides > li{
+    padding: 0;
+}
+
+.mobileHidden{
+    display: none;
+}
+
+.subContact{
+    font-size: 14px;
+}
+
+#footer{
+    /*text-align: right;*/
+    padding: 35px 0;
+}
+.footerSection{
+    display: inline-block;
+    width: 33%;
+    margin: auto;
+    /*border: solid 1px;*/
+}
+
+#footer3{
+    font-size: 11px;
+}
+
+:focus{
+    border: none;
+    box-shadow: none;
+}
+
+/*SLIDESHOW*/
+.rslides{
+    margin:0 auto;
+}
+
+#ss17Slides img{
+    height: 480px;
+    width: auto;
+}
+
+.portrait{
+    position: relative;
+    left: 25%;
+}
+
+#credits{
+    font-size: 10px;
+    color: gray;
+    width: 370px;
+    margin: auto;
+    text-align: right;
+    font-style: italic;
+}
+
+/*MAIL CHIMP CUSTOMIZATION*/
+
+#mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif; 
+    width:100%;
+}
+
+#mc_embed_signup input.email{
+ font-size: 9px;
+ width: 130px;
+ border: none;
+ border-bottom: solid 1px;
+ border-radius: 0;
+ height: 22px;
+ font-family: "Avenir Next";
+}
+
+#mc_embed_signup .button{
+    background-color: #fff;
+    color: black;
+    font-size: 10px;
+    padding: 0 5px;
+    height: 25px;
+    line-height: 0;
+    font-family: "Avenir Next";
+}
+
+/*Media Queries*/
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .mobileMenu{
+          display: block;
+      }
+      
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+      header{
+          margin-bottom: 0px;
+      }
+      
+      .contentContainer {
+         margin-top: 5%;
+      }
+      
+      .mobileMenu{
+          display: block;
+          margin: 10px 0;
+      }
+      
+      #tabLinks{
+          width: 100%;
+          float: none;
+      }
+
+      #menuBar{
+          margin:0;
+          padding:0;
+          text-align: center;
+          display: none;
+      }
+      #main{
+          margin: auto;
+          width: 80%;
+          /*padding-top: 2px;*/
+      }
+
+      #social{
+          text-align: center;
+          width: 80%;
+      }
+
+      .mobileHidden{
+          display: block;
+      }
+      
+      #footer{
+          text-align: center;
+      }
+      
+      .footerSection{
+          display:block;
+          width: 100%;
+      }
+      
+      #mc_embed_signup .clear {
+    clear: none;
+    display: inline;
+      }
+      
+      #mc_embed_signup input.email{
+          width: 40%;
+          display: inline-block;
+      }
+
+      #mc_embed_signup .button{
+           width: 20%;
+          display: inline-block;
+      }
+      
+  }
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+      .mobileMenu{
+          display: block;
+      }
+      
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+      .mobileMenu{
+          display: block;
+      }
+      
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+      #credits{
+          width: 100%;
+          font-size: 9px;
+      }
+      
+   .portrait{
+    left: 0%;
+}
+  }
